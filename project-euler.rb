@@ -1,4 +1,4 @@
-# 2018 Resolution is to do one Project Eular problem every single day.
+# 2018 Resolution is to do one Project Euler problem every single day.
 
 # ----------------------------------------------------------------------------
 
@@ -30,36 +30,38 @@
 
 # By considering the terms in the Fibonacci sequence whose values do not exceed four million, find the sum of the even-valued terms.
 
-arr = [1, 2]
+# arr = [1, 2]
 
-30.times do
-  new_value = arr.last + (arr[-2])
-  arr << new_value
+# 30.times do
+#   new_value = arr.last + (arr[-2])
+#   arr << new_value
+# end 
+# sum = 0
+# i = 0
+# arr.length.times do
+#   if arr[i] %2 === 0 
+#     sum += arr[i]
+#   else
+#   end
+#   i +=1 
+# end
+# p sum
 
-end 
+# ----------------------------------------------------------------------------
 
-sum = 0
-i = 0
-arr.length.times do
-  if arr[i] %2 === 0 
-    sum += arr[i]
-    
-  else
-  end
-  i +=1 
+# Problem 3 (January 3, 2018)
+
+# The prime factors of 13195 are 5, 7, 13 and 29.
+# What is the largest prime factor of the number 600851475143 
+
+# I googled how to solve this since I didnt know how. I learned about a 'prime' class. If we require 'prime' then we can tag that to our variables and see all of the prime numbers of that number.
+
+require "prime"
+
+def problem_three(num)
+    p last_prime = num.prime_division.last # This will give us [6857, 1]
+    # We only want the first one
+    last_prime[0] # or last_prime.first
 end
 
-p sum
-
-
-
-
-
-
-
-
-
-
-
-
-
+puts problem_three(600851475143)
