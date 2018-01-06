@@ -56,12 +56,77 @@
 
 # I googled how to solve this since I didnt know how. I learned about a 'prime' class. If we require 'prime' then we can tag that to our variables and see all of the prime numbers of that number.
 
-require "prime"
+# require "prime"
 
-def problem_three(num)
-    p last_prime = num.prime_division.last # This will give us [6857, 1]
-    # We only want the first one
-    last_prime[0] # or last_prime.first
-end
+# def problem_three(num)
+#     p last_prime = num.prime_division.last # This will give us [6857, 1]
+#     # We only want the first one
+#     last_prime[0] # or last_prime.first
+# end
 
-puts problem_three(600851475143)
+# puts problem_three(600851475143)
+
+# ----------------------------------------------------------------------------
+
+# Problem 4 (January 4, 2018)
+# A palindromic number reads the same both ways. The largest palindrome made from the product of two 2-digit numbers is 9009 = 91 × 99.
+
+# Find the largest palindrome made from the product of two 3-digit numbers.
+
+# def problem_4(num1, num2)
+#   num1_array = []
+#   num2_array = []
+#   array_to_test_palindrome = []
+
+#   num1.times do
+#     num1_array << num1
+#     num1 = num1 - 1
+#   end
+
+#   num2.times do
+#     num2_array << num2
+#     num2 = num2 - 1
+#   end
+
+#   num1_array.each do |num1_array_item|
+#     num1_array_item
+#     num2_array.each do |num2_array_item|
+#       num2_array_item
+#       array_to_test_palindrome << num1_array_item * num2_array_item
+#     end
+#   end
+
+#   array_to_test_palindrome.each do |number|
+#     number = number.to_s
+#     greatest_number = 0 
+
+#     if number == number.reverse
+
+#       if number.to_i > greatest_number
+#         greatest_number = number
+#         p number
+#       end
+#     end
+#   end
+# end
+
+# problem_4(999, 999)
+# Answer is 906609
+
+# My code is very messy for this one. I looked in my terminal to find the largest number. It was still good practice.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
