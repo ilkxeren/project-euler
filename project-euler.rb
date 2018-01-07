@@ -116,19 +116,60 @@
 # My code is very messy for this one. I looked in my terminal to find the largest number. It was still good practice.
 
 
-# ----------------------------------------------------------------------------
-
+# # ----------------------------------------------------------------------------
+# Problem 5
 # 2520 is the smallest number that can be divided by each of the numbers from 1 to 10 without any remainder.
 
 # What is the smallest positive number that is evenly divisible by all of the numbers from 1 to 20?
 
+# count = 1
 
-count = 1
+# while true
+#         num = 20 * count
+#         if num % 1 == 0 and num % 2 == 0 and num % 3 == 0 and num % 4 == 0 and num % 5 == 0 and num % 6 == 0 and num % 7 == 0 and num % 11 == 0 and num % 12 == 0 and num % 13 == 0 and num % 14 == 0 and num % 15 == 0 and num % 16 == 0 and num % 17 == 0 and num % 18 == 0 and num % 19 == 0 and num % 20 == 0
+#                 puts num
+#         end
+#         count += 1
+# end
 
-while true
-        num = 20 * count
-        if num % 1 == 0 and num % 2 == 0 and num % 3 == 0 and num % 4 == 0 and num % 5 == 0 and num % 6 == 0 and num % 7 == 0 and num % 11 == 0 and num % 12 == 0 and num % 13 == 0 and num % 14 == 0 and num % 15 == 0 and num % 16 == 0 and num % 17 == 0 and num % 18 == 0 and num % 19 == 0 and num % 20 == 0
-                puts num
-        end
-        count += 1
+# ----------------------------------------------------------------------------
+# Problem 6
+# The sum of the squares of the first ten natural numbers is,
+
+# 1(2) + 2(2) + ... + 102 = 385
+# The square of the sum of the first ten natural numbers is,
+
+# (1 + 2 + ... + 10)2 = 552 = 3025
+# Hence the difference between the sum of the squares of the first ten natural numbers and the square of the sum is 3025 − 385 = 2640.
+
+# Find the difference between the sum of the squares of the first one hundred natural numbers and the square of the sum.
+
+square_num = 1
+calculated_num = 0
+square_sum = 0 
+100.times do
+  calculated_num = square_num * square_num
+  square_sum = calculated_num + square_sum
+  square_num += 1
 end
+
+num = 1
+sum = 0
+sum_of_squares = 0
+100.times do
+sum = sum + num
+num += 1
+sum_of_squares = sum * sum
+
+end
+
+p sum_of_squares - square_sum
+
+
+
+
+
+
+
+
+
