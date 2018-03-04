@@ -144,26 +144,88 @@
 
 # Find the difference between the sum of the squares of the first one hundred natural numbers and the square of the sum.
 
-square_num = 1
-calculated_num = 0
-square_sum = 0 
-100.times do
-  calculated_num = square_num * square_num
-  square_sum = calculated_num + square_sum
-  square_num += 1
+# square_num = 1
+# calculated_num = 0
+# square_sum = 0 
+# 100.times do
+#   calculated_num = square_num * square_num
+#   square_sum = calculated_num + square_sum
+#   square_num += 1
+# end
+
+# num = 1
+# sum = 0
+# sum_of_squares = 0
+# 100.times do
+# sum = sum + num
+# num += 1
+# sum_of_squares = sum * sum
+
+# end
+
+# p sum_of_squares - square_sum
+
+# ----------------------------------------------------------------------------
+# By listing the first six prime numbers: 2, 3, 5, 7, 11, and 13, we can see that the 6th prime is 13.
+
+# What is the 10 001st prime number?
+
+# require 'prime'
+
+# p Prime.take(1230)
+
+
+# ---------------------------------------------------
+
+# Ruby 3. Write a while loop that takes input from the user, performs an action, and only stops when the user types "STOP". Each loop can get info from the user.
+
+while true
+
+  p "Type something"
+
+  user_input = gets.chomp
+
+  if user_input == "STOP"
+
+    break
+
+  else
+
+  end
+
 end
 
-num = 1
-sum = 0
-sum_of_squares = 0
-100.times do
-sum = sum + num
-num += 1
-sum_of_squares = sum * sum
 
-end
 
-p sum_of_squares - square_sum
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
