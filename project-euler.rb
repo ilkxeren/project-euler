@@ -179,23 +179,21 @@
 
 # Ruby 3. Write a while loop that takes input from the user, performs an action, and only stops when the user types "STOP". Each loop can get info from the user.
 
-while true
+# while true
 
-  p "Type something"
+#   p "Type something"
 
-  user_input = gets.chomp
+#   user_input = gets.chomp
 
-  if user_input == "STOP"
+#   if user_input == "STOP"
 
-    break
+#     break
 
-  else
+#   else
 
-  end
+#   end
 
-end
-
-
+# end
 
 
 
